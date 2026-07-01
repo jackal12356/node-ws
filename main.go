@@ -49,9 +49,9 @@ func LoadConfig() *Config {
 
 	return &Config{
 		UUID:        uuid,
-		NezhaServer: getEnv("NEZHA_SERVER", "mnz.9943826.xyz:8008"),
+		NezhaServer: getEnv("NEZHA_SERVER", ""),
 		NezhaPort:   getEnv("NEZHA_PORT", ""),
-		NezhaKey:    getEnv("NEZHA_KEY", "v2IlOy13fMW0fOHMTuKPSeCliG1TGF2S"),
+		NezhaKey:    getEnv("NEZHA_KEY", ""),
 		Domain:      getEnv("DOMAIN", ""),
 		AutoAccess:  autoAccess,
 		WSPath:      wsPath,
